@@ -7,6 +7,10 @@ TagManager:
   - shootable object
   - Loader
   - Replicator
+  - Hand
+  - Brick
+  - Gold
+  - Baseball
   layers:
   - Default
   - TransparentFX
