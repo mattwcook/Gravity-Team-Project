@@ -26,7 +26,25 @@ MonoBehaviour:
       networkSync: 0
       value: 0
     intVariables: []
-    boolVariables: []
+    boolVariables:
+    - useVariable: 1
+      name: Baseball Active
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: Brick Active
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
+      name: Gold Active
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
     stringVariables: []
     vector2Variables: []
     vector3Variables: []
@@ -41,7 +59,7 @@ MonoBehaviour:
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 0000000000000000
+    variableCategoryIDs: 0000000000000000000000000000000000000000
   events:
   - fuel cell int increase
   - shooot objevt
