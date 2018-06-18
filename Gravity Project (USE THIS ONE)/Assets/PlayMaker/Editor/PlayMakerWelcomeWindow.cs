@@ -18,7 +18,7 @@ namespace HutongGames.PlayMakerEditor
     public class PlayMakerWelcomeWindow : EditorWindow
     {
         // Remember to update version info since it's used by export scripts!
-        public const string InstallCurrentVersion = "1.8.6";
+        public const string InstallCurrentVersion = "1.8.7";
         public const string InstallBetaVersion = "";
         public const string Version = InstallCurrentVersion + " " + InstallBetaVersion;
 
@@ -83,7 +83,7 @@ namespace HutongGames.PlayMakerEditor
 
         private static bool stylesInitialized;
 
-#if PLAYMAKER_1_8_6
+#if PLAYMAKER_1_8_7
         [MenuItem("PlayMaker/Welcome Screen", false, 500)]
 #elif PLAYMAKER
         [MenuItem("PlayMaker/Update PlayMaker", false, 500)]
@@ -133,6 +133,7 @@ namespace HutongGames.PlayMakerEditor
 
             // We want to show the Upgrade Guide after installing
 
+            /*
             if (EditorStartupPrefs.ShowUpgradeGuide)
             {
                 //currentPage = Page.UpgradeGuide; //TODO: This was problematic
@@ -140,7 +141,7 @@ namespace HutongGames.PlayMakerEditor
                 EditorUtility.DisplayDialog("PlayMaker",
                     "Please check the Upgrade Guide for more information on this release.", 
                     "OK");
-            }
+            }*/
 
             SetPage(currentPage);               
             Update();
@@ -160,7 +161,7 @@ namespace HutongGames.PlayMakerEditor
                 }
                 else
                 {
-                    currentVersionLabel = "version unkown";
+                    currentVersionLabel = "version unknown";
                     currentVersionShort = "";
                     majorVersion = -1;
                 }
@@ -567,7 +568,7 @@ namespace HutongGames.PlayMakerEditor
             var rect = GUILayoutUtility.GetLastRect();
             EditorGUIUtility.AddCursorRect(rect, MouseCursor.Link);
 
-            if (Event.current.type == EventType.mouseDown && rect.Contains(Event.current.mousePosition))
+            if (Event.current.type == EventType.MouseDown && rect.Contains(Event.current.mousePosition))
             {
                 func(userData);
                 GUIUtility.ExitGUI();
@@ -581,7 +582,7 @@ namespace HutongGames.PlayMakerEditor
             GUI.Box(backButtonRect, backButton, GUIStyle.none);
             EditorGUIUtility.AddCursorRect(backButtonRect, MouseCursor.Link);
 
-            if (Event.current.type == EventType.mouseDown && backButtonRect.Contains(Event.current.mousePosition))
+            if (Event.current.type == EventType.MouseDown && backButtonRect.Contains(Event.current.mousePosition))
             {
                 GotoPage(toPage);
                 GUIUtility.ExitGUI();
