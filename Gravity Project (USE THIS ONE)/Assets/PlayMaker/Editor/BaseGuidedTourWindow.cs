@@ -189,7 +189,7 @@ namespace HutongGames.PlayMakerEditor
 
             // mouse event not used by other UI 
             // so must have clicked on empty area
-            if (Event.current.type == EventType.mouseDown && 
+            if (Event.current.type == EventType.MouseDown && 
                 Event.current.mousePosition.y < position.height - helpHeight)
             {
                 ClearHighlight();

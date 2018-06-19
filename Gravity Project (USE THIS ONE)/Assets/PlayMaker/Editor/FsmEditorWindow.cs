@@ -92,7 +92,7 @@ namespace HutongGames.PlayMakerEditor
             fsmEditor.OnGUI();
 
             /* Debug Repaint events
-            if (Event.current.type == EventType.repaint)
+            if (Event.current.type == EventType.Repaint)
             {
                 Debug.Log("Repaint");
             }*/
