@@ -93,7 +93,7 @@ namespace HutongGames.PlayMaker.Actions
 					#endif
 					break;
 				case SceneReferenceOptions.SceneByName:
-					_unloaded = SceneManager.UnloadScene (sceneByName.Value);
+					_unloaded = SceneManager.UnloadScene(sceneByName.Value);
 					break;
 				case SceneReferenceOptions.SceneByPath:
 					#if UNITY_5_4_OR_NEWER
