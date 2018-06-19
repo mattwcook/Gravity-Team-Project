@@ -16,7 +16,7 @@ MonoBehaviour:
     dataVersion: 2
     usedInTemplate: {fileID: 11400000}
     name: FSM
-    startState: Launch
+    startState: Calculate Force
     states:
     - name: Calculate Force
       description: 
@@ -196,13 +196,13 @@ MonoBehaviour:
           networkSync: 0
           value: 0
         - useVariable: 1
-          name: 
+          name: Force
           tooltip: 
           showInInspector: 0
           networkSync: 0
           value: 0
         - useVariable: 1
-          name: shooting force
+          name: Force
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -227,7 +227,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 010000000000000000
+        byteData: 000000000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
