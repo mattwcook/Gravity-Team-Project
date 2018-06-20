@@ -11,6 +11,8 @@ TagManager:
   - Brick
   - Gold
   - Baseball
+  - Fuel
+  - Floor
   layers:
   - Default
   - TransparentFX

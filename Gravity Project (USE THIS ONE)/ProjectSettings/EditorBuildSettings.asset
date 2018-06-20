@@ -4,4 +4,19 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/EARTH gm.unity
+    guid: 6ba5fc446f4ecfb42903ff33766bd6ce
+  - enabled: 1
+    path: Assets/mars gm.unity
+    guid: 97560d09463199744a7de21665d6b037
+  - enabled: 1
+    path: Assets/Jupiter gm.unity
+    guid: 61895311d41e4c940ab140bbbdbf5742
+  - enabled: 1
+    path: Assets/saturn gm.unity
+    guid: 46459c7a6f1e05744bd6a68135da5aa7
+  - enabled: 1
+    path: Assets/Space Station.unity
+    guid: be4a6ed2571079642b8fe06254024095

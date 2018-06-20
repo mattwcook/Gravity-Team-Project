@@ -63,3 +63,24 @@ MonoBehaviour:
   events:
   - fuel cell int increase
   - shooot objevt
+  - Button Released
+  - FINISHED
+  - Hit
+  - Next Level
+  - Fuel Added
+  - Grab
+  - L Grab
+  - R Grab
+  - Touch
+  - Untouch
+  - delete yoelf
+  - Baseball Loaded
+  - Baseball Removed
+  - Brick Loaded
+  - Brick Removed
+  - Gold Loaded
+  - Gold Removed
+  - MOUSE DOWN
+  - Button Pressed
+  - Fuel Cell Grabbed
+  - Button Up

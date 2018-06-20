@@ -16,7 +16,7 @@ MonoBehaviour:
     dataVersion: 2
     usedInTemplate: {fileID: 11400000}
     name: FSM
-    startState: Launch
+    startState: Calculate Force
     states:
     - name: Calculate Force
       description: 
@@ -34,7 +34,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Launch
         linkStyle: 0
         linkConstraint: 0
@@ -152,7 +152,7 @@ MonoBehaviour:
       - fsmEvent:
           name: FINISHED
           isSystemEvent: 1
-          isGlobal: 0
+          isGlobal: 1
         toState: Collision Listen
         linkStyle: 0
         linkConstraint: 0
@@ -196,13 +196,13 @@ MonoBehaviour:
           networkSync: 0
           value: 0
         - useVariable: 1
-          name: 
+          name: Force
           tooltip: 
           showInInspector: 0
           networkSync: 0
           value: 0
         - useVariable: 1
-          name: shooting force
+          name: Force
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -227,7 +227,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 010000000000000000
+        byteData: 000000000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -261,7 +261,7 @@ MonoBehaviour:
       - fsmEvent:
           name: delete yoelf
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: delete yoelf
         linkStyle: 0
         linkConstraint: 0
@@ -404,10 +404,10 @@ MonoBehaviour:
     events:
     - name: FINISHED
       isSystemEvent: 1
-      isGlobal: 0
+      isGlobal: 1
     - name: delete yoelf
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     globalTransitions: []
     variables:
       floatVariables:
